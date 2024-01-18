@@ -18,11 +18,11 @@ gap: calc(min(2vw, 2em) * 1);
 }
 
 .header .row-split .flex-col.first {
-width: 20%;
+width: 22%;
 }
 
 .header .row-split .flex-col.second {
-width: 80%;
+width: 78%;
 display: flex;
 }
 
