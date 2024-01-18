@@ -50,7 +50,7 @@ font-display: swap;
 --animation-smooth: 1.5s cubic-bezier(0.5, 0.5, 0, 1);
 --animation: 1s cubic-bezier(0.5, 0.5, 0, 1);
 --border-radius: 0.6em;
-    --container-padding: 20vw;
+    --container-padding: 18vw;
      --section-padding-medium: min(6vw, 6em);
 }
 
