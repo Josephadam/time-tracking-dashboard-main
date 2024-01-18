@@ -1,0 +1,337 @@
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header .row-split {
+  display: flex;
+width: 100%;
+justify-content: space-between;
+gap: calc(min(2vw, 2em) * 1);
+}
+
+.header .row-split .flex-col.first {
+width: 20%;
+}
+
+.header .row-split .flex-col.second {
+width: 80%;
+display: flex;
+}
+
+.active {
+  color: white;
+}
+
+.header .row {
+   display: flex;
+    flex-wrap: wrap;
+    gap:  var(--gap);
+    --gap: calc(min(2vw, 2em) * 1);
+    --columns: 3;
+   
+}
+
+.header .flex-col-2 {
+  width: calc((99.999% / var(--columns)) - (var(--gap) * ((var(--columns) - 1) / var(--columns))));
+}
+
+.header .flex-col:first-of-type {
+  position: relative;
+  border-radius: var(--border-radius);
+   background-color: var(--Dark-blue);
+}
+
+.header .flex-col:first-of-type .top {
+   padding: 1.5rem 2.5rem 4rem 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.8rem;
+   border-bottom-left-radius: var(--border-radius);
+   border-radius: var(--border-radius);
+    background-color: var(--Blue);
+}
+
+.header .flex-col:first-of-type .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.header .flex-col:first-of-type .icon{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+
+
+.header .flex-col:first-of-type .bottom {
+  padding: 1.5rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.header .bottom h5 {
+  cursor: pointer;
+  transition: var(--animation);
+}
+
+.header .bottom h5:hover {
+ color: white;
+
+}
+
+
+
+
+.header .row .flex-col-2:nth-of-type(1):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: #FF8B64;
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+/* Initial state of :before pseudo-element and .img */
+.header .row .flex-col-2:before,
+.header .row .flex-col-2 .img {
+    transition: var(--animation); /* Ensure this variable is defined, or use a specific value like 300ms */
+    transform: translateY(0);
+    z-index: -1;
+}
+
+/* Hover effect for :before and .img */
+.header .row .flex-col-2:hover:before,
+.header .row .flex-col-2:hover .img {
+    transform: translateY(60px); /* Adjust this value as needed */
+}
+
+
+.header .row .flex-col-2:nth-of-type(2):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: var(--Soft-blue);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+.header .row .flex-col-2:nth-of-type(3):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: var(--Light-red);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+.header .row .flex-col-2:nth-of-type(4):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: var(--Lime-green);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+
+.header .row .flex-col-2:nth-of-type(5):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: var(--Violet);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+.header .row .flex-col-2:nth-of-type(6):before {
+  content: "";
+position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: var(--Soft-orange);
+    z-index: -1;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
+.header .row .flex-col-2 {
+  position: relative;
+overflow: hidden;
+border-radius: var(--border-radius);
+}
+
+
+
+.header .row .flex-col-2 .content {
+background-color: var(--Dark-blue);
+border-radius: var(--border-radius);
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+transition: var(--animation-smooth);
+cursor: pointer;
+height: 100%;
+width: 100%;
+}
+
+
+
+
+
+.header .row .flex-col-2 .content:hover {
+background-color: hsl(235, 44%, 35%);
+}
+
+
+.header .row .flex-col-2 .content .top {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.header .row .flex-col-2 .content .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.header .row .flex-col-2 .content .top h5 {
+  color: white;
+}
+.header .row .flex-col-2 .content .top svg {
+cursor: pointer;
+}
+.top svg .cls-1 {
+    transition: var(--animation);
+}
+
+.top svg:hover .cls-1 {
+    fill: white;
+}
+
+
+.header.row .flex-col-2 .content .top svg:hover {
+  fill: white;
+}
+
+.header .row .flex-col-2 .img {
+padding-bottom: 1.8rem;
+position: relative;
+overflow: hidden;
+} 
+
+.header .row .flex-col-2 .img img {
+position: absolute;
+width: 45px;
+right: 12px;
+top: -3px;
+} 
+
+@media screen and (max-width: 1024px){
+   .header .row-split .flex-col.first {
+width: 25%;
+}
+
+.header .row-split .flex-col.second {
+width: 100%;
+}
+}
+
+
+@media screen and (max-width: 900px){
+  main {
+    height: 100%;
+  }
+  .header .row {
+    --columns: 2;
+   
+}
+
+.header .row-split {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header .row-split .flex-col.first {
+width: 100%;
+}
+
+.header .row-split .flex-col.second {
+width: 100%;
+}
+
+.header .flex-col:first-of-type .top, 
+    .header .flex-col:first-of-type .bottom {
+        flex-direction: row;
+        /* Additional styling adjustments for smaller screens, if necessary */
+    }
+
+    .header .flex-col:first-of-type .top {
+      padding: 1.5rem;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .header .flex-col:first-of-type .bottom {
+      justify-content: space-between;
+      padding: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+  main {
+    height: 100%;
+  }
+
+  
+.header .row-split {
+gap: calc(min(2vw, 2em) * 2.5);
+}
+
+
+.header .row {
+    --gap: calc(min(2vw, 2em) * 2.5);
+   
+   
+}
+
+
+  .header .row {
+    --columns: 1;
+   
+}
+
+.header .row .flex-col-2 .content .bottom {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styleguide.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="section header">
+      <div class="container">
+        <div class="row-split">
+          <div class="flex-col first">
+            <div class="top">
+              <div class="icon">
+                <img src="/assets/images/image-jeremy.png" alt="img1">
+              </div>
+              <div class="name">
+                <h6>Report for</h6>
+                <h2>Jeremy Robson</h2>
+              </div>
+            </div>
+            <div class="bottom">
+              <h5>Daily</h5>
+              <h5 class="active">Weekly</h5>
+              <h5>Monthly</h5>
+            </div>
+          </div>
+          <div class="flex-col second">
+            <div class="row">
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-work.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Work</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>32hrs</h1>
+                    <h6>Last Week - 36hrs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-play.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Play</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>10hrs</h1>
+                    <h6>Last Week - 8hrs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-study.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Study</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>4hrs</h1>
+                    <h6>Last Week - 7hrs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-exercise.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Exercise</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>4hrs</h1>
+                    <h6>Last Week - 5hrs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-social.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Social</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>5hrs</h1>
+                    <h6>Last Week - 10hrs</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col-2">
+                <div class="img">
+                  <img src="assets/images/icon-self-care.svg" alt="work">
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <h5>Self Care</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 5" width="15">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #bbc0ff;
+                            fill-rule: evenodd;
+                            stroke-width: 0px;
+                          }
+                        </style>
+                      </defs>
+                      <path class="cls-1"
+                        d="m2.5,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5S0,3.88,0,2.5,1.12,0,2.5,0Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Zm8,0c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z" />
+                    </svg>
+                  </div>
+                  <div class="bottom">
+                    <h1>2hrs</h1>
+                    <h6>Last Week - 2hrs</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script>
+    const url = "/data.json";
+    let dataList = "";
+
+    async function fetchData() {
+      try {
+        const response = await fetch(url);
+        dataList = await response.json();
+        updateValues(); // Update values on initial load
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    }
+
+    function updateValues(period = 'weekly') {
+      const activityCards = document.querySelectorAll(".flex-col-2");
+      if (!dataList) {
+        return;
+      }
+
+      activityCards.forEach(card => {
+        updateCard(card, period);
+      });
+    }
+
+    function updateCard(card, period) {
+      const activityName = card.querySelector(".top h5").textContent;
+      const activityData = dataList.find(data => data.title === activityName);
+
+      if (activityData) {
+        const timeFrameData = activityData.timeframes[period];
+        card.querySelector(".bottom h1").textContent = `${timeFrameData.current}hrs`;
+        card.querySelector(".bottom h6").textContent = `Last Week - ${timeFrameData.previous}hrs`;
+      }
+    }
+
+    function setupPeriodChangeListeners() {
+      document.querySelectorAll(".bottom h5").forEach(periodBtn => {
+        periodBtn.addEventListener('click', (e) => {
+          handlePeriodChange(e);
+        });
+      });
+    }
+
+    function handlePeriodChange(event) {
+      document.querySelectorAll(".bottom h5").forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      updateValues(event.target.textContent.toLowerCase());
+    }
+
+    fetchData();
+    setupPeriodChangeListeners();
+  </script>
+
+</body>
+
+</html>
